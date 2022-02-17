@@ -1,5 +1,5 @@
-name: 'Checkout Buildx'
-description: 'Checks out the repository and configures Docker Buildx with QEMU and logs in to DockerHub'
+name: 'Checkout QEMU Buildx'
+description: 'Checks out the repository, configures QEMU and Docker Buildx for all available architectures before logging in to DockerHub'
 author: 'JonasAlfredsson'
 branding:
   icon: 'life-buoy'
