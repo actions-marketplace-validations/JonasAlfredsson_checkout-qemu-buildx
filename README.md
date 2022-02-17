@@ -1,6 +1,6 @@
-# ghac-checkout-buildx
-This is part of my "GitHub Actions Common" collection where I collect tasks
-which I otherwise would repeat in all my workflows.
+# checkout-qemu-buildx
+This is a collection of tasks which I repeat in basically all my workflows, so
+I decided to group them all into a single "composite action".
 
 This will:
 
@@ -13,7 +13,7 @@ This will:
 
 ```yaml
 - name: Checkout repository and set up Docker
-  uses: JonasAlfredsson/ghac-checkout-buildx@1
+  uses: JonasAlfredsson/checkout-qemu-buildx@1
   with:
     should_login: ${{ github.event_name != 'pull_request' }}
     username: ${{ secrets.DOCKERHUB_USERNAME }}
