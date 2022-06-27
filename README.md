@@ -13,7 +13,7 @@ This will:
 
 ```yaml
 - name: Checkout repository and set up Docker
-  uses: JonasAlfredsson/checkout-qemu-buildx@v1.0.0
+  uses: JonasAlfredsson/checkout-qemu-buildx@v2
   with:
     should_login: ${{ github.event_name != 'pull_request' }}
     username: ${{ secrets.DOCKERHUB_USERNAME }}
